@@ -1,0 +1,30 @@
+#calendar {
+    max-width: 550px; /* Set the maximum width */
+    margin: auto;
+    padding: 20px;
+}
+
+:root {
+  
+    --fc-border-color: none;
+    --fc-day-today: red;
+  }
+
+  .fc-day-today {
+    background: rgb(222, 230, 187) !important;
+    border: none !important;
+  
+}
+
+.container{
+  width: auto;
+  height: 100px;
+  background-color: rgb(222, 230, 187);
+  margin: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+
+}
+
