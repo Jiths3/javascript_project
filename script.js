@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // storing the habits 
 
+
 var habitsarray = [];
 
 
@@ -41,11 +42,14 @@ habitsarray.push(habit3);
 habitsarray.push(habit4);
 habitsarray.push(habit5);
 
-console.log(habitsarray);
+let habitstring = JSON.stringify(habitsarray);
 
-}
+localStorage.setItem('habits',habitstring);
+
+localStorage.getItem('habits');
 
 
-
-)
-});
+console.log(localStorage.getItem('habits'));
+    
+// console.log(habitsarray);
+})});
