@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habit Tracker App</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
 
 </head>
 <body>
     <div id='calendar'></div>
-    <div class="container"><h1>hi this is where i want my habits to be appended </h1></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <div class="container"></div>
+    <div class="container" id="firsthabit"></div>
+    <div class="container" id="second habit"> </div>
+    <div class="container" id="Third habit"> </div>
+    <div class="container" id="fourth habit"> </div>
+
+    <script src="script.js"></script>
+    <script>
+        let habitsunstring = JSON.parse(localStorage.getItem("habits"));
+        const retrievedHabits = [];
+        retrievedHabits.push(habitsunstring);
+        console.log(retrievedHabits);
+        let habitone = retrievedHabits[0] ;
+        
+        let main = document.getElementById("firsthabit");
+        
+        main.innerHTML = habitone;
+        </script>
 
 </body>
 </html>
