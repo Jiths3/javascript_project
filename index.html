@@ -6,28 +6,18 @@
     <title>Habit Tracker App</title>
     <link rel="stylesheet" href="styles.css">
     
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    
 
 </head>
 <body>
     <div id='calendar'></div>
     <div class="container" id="firsthabit"></div>
-    <div class="container" id="second habit"> </div>
-    <div class="container" id="Third habit"> </div>
-    <div class="container" id="fourth habit"> </div>
+    <div class="container" id="secondhabit"> </div>
+    <div class="container" id="thirdhabit"> </div>
+    <div class="container" id="fourthhabit"> </div>
 
-    <script src="script.js"></script>
-    <script>
-        let habitsunstring = JSON.parse(localStorage.getItem("habits"));
-        const retrievedHabits = [];
-        retrievedHabits.push(habitsunstring);
-        console.log(retrievedHabits);
-        let habitone = retrievedHabits[0] ;
-        
-        let main = document.getElementById("firsthabit");
-        
-        main.innerHTML = habitone;
-        </script>
+    <script src="script2.js"></script>   
+   
 
 </body>
 </html>

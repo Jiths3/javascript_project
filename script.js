@@ -1,33 +1,33 @@
 // Render the calendar
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the calendar
-    var calendarEl = document.getElementById('calendar');
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Initialize the calendar
+//     var calendarEl = document.getElementById('calendar');
     
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth', // Start with month view
-        height: 'auto',
-        dateClick: function(info) {
-            alert('Date: ' + info.dateStr); // Display the selected date
-            // Here you can add logic to display tasks for the selected date
-        },
-        myCustomButton: {
-            text: 'custom!',
-            click: function() {
-              alert('clicked the custom button!');
-            }
-          },
-          headerToolbar: {
+//     var calendar = new FullCalendar.Calendar(calendarEl, {
+//         initialView: 'dayGridMonth', // Start with month view
+//         height: 'auto',
+//         dateClick: function(info) {
+//             alert('Date: ' + info.dateStr); // Display the selected date
+//             // Here you can add logic to display tasks for the selected date
+//         },
+//         myCustomButton: {
+//             text: 'custom!',
+//             click: function() {
+//               alert('clicked the custom button!');
+//             }
+//           },
+//           headerToolbar: {
             
-            center: '  myCustomButton',
+//             center: '  myCustomButton',
             
-          }
+//           }
         
         
-    });
+//     });
     
-    calendar.render(); 
-});
+//     calendar.render(); 
+// });
     
 
 
