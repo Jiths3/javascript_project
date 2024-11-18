@@ -45,7 +45,7 @@ body {
 }
 
 .navbar ul{
-    margin-left: 950px;
+    text-align: right;
 }
 
 
@@ -99,4 +99,16 @@ img{
 img{
     margin-left: 150px;
     width: 600px;
+}
+
+#habit-form label , input{
+    margin: 20px;
+
+}
+
+#habit-form input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+
 }
